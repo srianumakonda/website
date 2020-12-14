@@ -1,6 +1,7 @@
 <html>
 <head>
-<title>How you can figure out your teacher's age without embarrassing yourself. </title>
+<title>How you can figure out your teacher&#39;s age without embarrassing yourself. </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <link rel="shortcut icon" href="img/sitelogo.png">
 <style>
@@ -21,13 +22,13 @@ body {
 
 <a href="../index.html">< Back to Website</a> <br>
 <a href="../blog.html">< Back to blog</a>
-<h1>How you can figure out your teacher's age without embarrassing yourself</h1>
+<h1>How you can figure out your teacher&#39;s age without embarrassing yourself</h1>
 <p>An article talking about a Convolutional Neural Network I designed to predict the age, gender, and ethnicity of people</p>
 <p>Date released: 1 Oct 2020 | Reading time: 11 minutes | Category: <a href="../blog.html#tech">Tech</a></p>
 <hr>
 
 <p>Remember those times when you were young and you accidentally asked your teacher how old she was? Yeah, I know, the ending didn’t go that well. Your parents got mad at you since they already told you the saying of “never ask a woman her age and a man his salary” 🙄. But isn’t it painful when you ask a question directly to someone and the only answer you get out of them is you embarrassing yourself? </p>
-<p>But what if I were to tell you that there was a way to get out of this? What if you were able to just get a picture of any person in this world and figure out their age? I̶n̶t̶r̶o̶d̶u̶c̶i̶n̶g̶ ̶S̶r̶i̶T̶e̶c̶h̶:̶ ̶a̶n̶ ̶a̶p̶p̶r̶o̶a̶c̶h̶ ̶t̶o̶ ̶s̶o̶m̶e̶ ̶o̶f̶ ̶t̶h̶e̶ ̶k̶i̶d̶’̶s̶ ̶b̶i̶g̶g̶e̶s̶t̶ ̶c̶h̶a̶l̶l̶e̶n̶g̶e̶s̶.̶ I’ve taught AI (yes, my 💻) to tell me how old my teacher is without having to ask her and have all my friends laugh at me for being an idiot. Let’s talk a bit more about it. </p>
+<p>But what if I were to tell you that there was a way to get out of this? What if you were able to just get a picture of any person in this world and figure out their age? I’ve taught AI (yes, my 💻) to tell me how old my teacher is without having to ask her and have all my friends laugh at me for being an idiot. Let’s talk a bit more about it. </p>
 
 <h2>Nerding Out Season 1 Episode 101: How your Windows Vista from WWII Read’s Images</h2>
 
@@ -42,7 +43,7 @@ Like I said with AI, refer to my <a href="https://medium.com/analytics-vidhya/th
 <p>Think of it like this: let’s just say that i[1] (the first neuron in layer i) has a value of 1. The weight (which is the line that connects to the neurons in h1) has a value associated with it. Let’s say that the weight value for i[1] and h[1][1] is 2. Let’s say that we also have a bias of 1. So, we’d run this through our function Wx+b. We now just substitute the values ( 2*1 + 1 = 3) and now h[1][1] has a value of 3! We’d just continue doing this for every single neuron until we’re done.</p>
 <p>Just to recap, the way we get x is from the input data. For example, each neuron in the input could be data in Fahrenheit and our goal is to teach the neural network how to convert that into Celsius. The w (weight) tells us how important that neuron is. The bigger the weight, the more prominent role it plays in the neural network. For example, if I wanted a computer to read images of handwritten digits, then we’d want the neurons where which store the handwritten digit to have a greater weight since that’s what we want to know.</p>
 <p>After getting all the weighted sum for h[1][1], then we’d run that through an activation function. An activation function tells the neural network if a particular neuron should be fired or not. The output will always be between 0 and 1 (since the margin is small the computer will get higher accuracy). The output will vary based on the function you use. For example, the step function only outputs a 0 or 1 if the output is greater than a certain threshold. The rectified linear unit (ReLU) will return 0 if the output is 0 or less or else it’ll just return the output.</p>
-<p>And yeah! That’s the overall GIST of Deep Learning! This is like the 100th time I'm saying this but do take a look at the Textbook article; you’ll learn a lot more there!</p>
+<p>And yeah! That’s the overall GIST of Deep Learning! This is like the 100th time I&#39;m saying this but do take a look at the Textbook article; you’ll learn a lot more there!</p>
 
 <h2>Getting into the Fun Stuff: Convolutional Neural Networks (CNNs)</h2>
 <p>ahhhhh, Convolutional Neural Networks. this is where the real fun beings. no, not fun as in watching your model training for hours, but fun as in spending hours and hours on stackoverflow over shape errors 😁. Anyway, you’re not here to hear me rant, so let’s dive right into it!</p>
@@ -79,7 +80,7 @@ Like I said with AI, refer to my <a href="https://medium.com/analytics-vidhya/th
 
 <h3>Chapter 4: Batch Normalization</h3>
 <p>Batch normalization is generally a topic most people don’t know much about. If nothing makes sense, <a href="https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c" target="_blank">this article</a> and <a href="https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/#:~:text=Batch%20normalization%20is%20a%20technique,required%20to%20train%20deep%20networks." target="_blank">this article</a> should help you a bit better.</p>
-<p>Whenever we have image data, the first thing most people will do is normalize the data. What that basically means is that whenever we have an image (let’s take a grayscale image for this example), the pixel values are between 0 and 255 (0 being black 255 being white). This is a HUGE range for the computer since of course, the computer has to convert everything to binary and use more RAM. So, what we can do is change the range from 0 to 255 to 0–1. That'll make it so much easier on the computer and help yourself by not having to wait really long.</p>
+<p>Whenever we have image data, the first thing most people will do is normalize the data. What that basically means is that whenever we have an image (let’s take a grayscale image for this example), the pixel values are between 0 and 255 (0 being black 255 being white). This is a HUGE range for the computer since of course, the computer has to convert everything to binary and use more RAM. So, what we can do is change the range from 0 to 255 to 0–1. That&#39;ll make it so much easier on the computer and help yourself by not having to wait really long.</p>
 <p>The same can be applied to neural networks. Even if we pass everything through our activation functions, at some point we’ll end up having a really large value. Normalizing that can make it a lot easier on the model, speed it up by allowing us to use a higher learning rate, and can reduce overfitting in some situations.</p>
 
 <h3>Chapter 5: Activation Functions</h3>
