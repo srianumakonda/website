@@ -17,6 +17,22 @@
 
     </style>
 
+    <!-- MailerLite Universal -->
+    <script>
+        (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+        var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+        f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+        var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+        _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+        
+        var ml_account = ml('accounts', '2104160', 'c6n9c8j8m7', 'load');
+    </script>
+    <!-- End MailerLite Universal -->
+    <script>
+        var ml_webform_2242782 = ml_account('webforms', '2242782', 'e6r3b4', 'load');
+        ml_webform_2242782('animation', 'fadeIn');
+    </script>
+
 </head>
 
 <body>
@@ -26,6 +42,7 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="blog/2020review.html">2020 Annual Letter</a></li>
             <li><a href="resources.html">Resources</a></li>
+            <li><a href="javascript:;" onclick="ml_webform_2242782('show')">Subscribe to the newsletter</a></li>
         </ul>
     </nav>
 
